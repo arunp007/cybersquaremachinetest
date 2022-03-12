@@ -1,0 +1,86 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Square</title>
+    <style>
+      .container{
+          display: grid;
+          grid-template-columns: 300px 300px 300px 300px 300px;
+          grid-template-rows: 300px 300px 300px 300px 300px;
+          grid-gap: 1px;
+          text-align: center;
+          width: 100%;
+          height: 400px;
+      }
+
+      .img1{
+          width: 290px;
+          height: 290px;
+      }
+
+      .bg1{
+          background-color: dodgerblue;
+          text-align: center;
+          height: 40px;
+          padding-top: 20px;
+          font-size: 20px;
+      }
+    </style>
+</head>
+<body>
+    <table width="100%" bgcolor="dodgerblue">
+        <tr>
+            <td><img src="{% static 'images/logo.png' %}" width="250px"  id="home" float="left" alt="">&nbsp;&nbsp;
+            <a href="#home" style="color: black;">Home</a>&nbsp;&nbsp;&nbsp;
+            <a href="{% static 'html/about.html' %}" style="color: black;">About Us</a>&nbsp;&nbsp;&nbsp;
+            <a href="{% static 'html/contact.html' %}" style="color: black;">Contact Us</a></td>&nbsp;&nbsp;&nbsp;
+        </tr>
+    </table>
+    <table width="100%" bgcolor="skyblue" height="400px">
+        <tr>
+            <td><center><img src="{% static 'images/kid.jpg' %}" width="600px" height="350px" style="border-radius:10px;" alt=""></center></td>
+        </tr>
+    </table>
+    <table width="100%" bgcolor="white" height="400px">
+        <tr>
+            <td><h1><center><font color="blue" size="50px"> Welcome To Cybersquare</font></center></h1></td>
+        </tr>
+        <tr>
+            <td><b><center><p>Online coding course for kids. Be technology creators rather than users of technology!</p></center></b></td><br>
+        </tr>
+     </table>
+            <div class="container">
+                <div>
+                    <h4>Jr Python Developer</h4>
+                    <img src="{% static 'images/1.jpg' %}" alt="" class="img1">
+                </div>
+                <div>
+                    <h4>Artificial Intelligence</h4>
+                    <img src="{% static 'images/2.jpg' %}" alt="" class="img1">
+                </div>
+
+                <div>
+                    <h4>Game Developer</h4>
+                    <img src="{% static 'images/3.jpg' %}" alt="" class="img1">
+                </div>
+
+                <div>
+                    <h4>Design Your Webpage</h4>
+                    <img src="{% static 'images/4.jpg' %}" alt="" class="img1">
+                </div>
+
+                <div>
+                    <h4>Design Your Webpage</h4>
+                    <img src="{% static 'images/5.jpg' %}" alt="" class="img1">
+                </div>
+            </div>
+            <div  class="bg1">
+            <label>Website content © Cybersquare</label>&nbsp;&nbsp;|&nbsp;&nbsp;<label>All right reserved</label><br>
+          </div>
+    
+</body>
+</html>
